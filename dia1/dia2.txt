@@ -77,3 +77,14 @@ método down é responsável por deletar a tabela
 
 para rodar a migration: npx knex migration:latest
 n esquecer do return ou vai dar warning did not return a promise
+---ELE CRIA O DB.SQLITE
+npx knex migrate:rollback (npx knex pra ver tudo)
+
+npx knex migrate:latest - APAGAR O BD SE DER ERRO E EXECUTAR A MIGRATIONS AGAIN
+INSISTIR QUE DA CERTO(FUCKING JAVASCRIPT)
+
+a autenticação (o id da chave estrangeira do usuário registrado que está cadastrando um incidente) vai no header(AUTHORIZATION)[[
+
+
+INSTALAR CORS
+npm install cors

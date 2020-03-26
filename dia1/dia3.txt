@@ -1,0 +1,4 @@
+-Limpar arquivos frontend
+readme, app.css, app.test.js, index.css, logo.svg, serviceWorker.js, setupTests
+LIMPAR IMPORTAÇÕES
+--public > robots.txt, manifest.json, logos, index.html, meta e link logo
