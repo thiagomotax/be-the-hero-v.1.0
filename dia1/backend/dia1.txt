@@ -13,3 +13,15 @@ app.get('/contato', (request, response) => {
         descricao: "descrição teste"
     })
 });
+
+
+SPA(single page application)
+recebe apenas json (dados comor resposta)
+backend n tem responsabilidade de apresentação dos dados
+página nunca recarrega (SPA)
+apenas dados com respostas (ao inves de html, css etc)
+
+
+React
+npx create-react-app appTeste (criar projeto)
+npm start(dependencia start pra iniciar app)
