@@ -1,0 +1,79 @@
+Rotas
+usa .get(/nome... pra acessar rota
+GET: SERVE PARA BUSCAR INFORMAÇÃO DO BACKEND
+POST: CRIAR UMA INFORMAÇÃO NO BACKEND
+PUT: ALTERAR UMA INFORMAÇÃO NO BACKEND
+DELETE: DELETAR UMA INFORMAÇÃO NO BACKEND
+(com get faço tudo rsrs)
+
+
+Insomnia - testar métodos HTTP
+
+
+Tipos de parametros notas
+Query params: parâmetros nomeados enviados na rota após ? (filtros, paginação)
+Route params: parâmetros utilizados para identificar recursos (Ex: tabela do banco /users), um unico recurso /users/:id (/users/1)
+
+
+app.get('...', (request, response)
+REQUEST guarda todos os dados da requisição do usuário
+
+para usar um queryparam vindo da requisição request.query
+http://localhost:3333/contato/?name=thiago&idade=25
+
+para usar route params, usa-se o params
+request.params
+parametros fixos
+
+Request body - corpo da requisição
+utilizado para criar ou alterar recursos (post)
+    const body = request.body;
+
+
+NODEMON - parar de ficar parando/startando servidor
+alterar script de teste que existia(em packages.json), apagar e colocar nodemon index.js (dps usa npm start) normal
+
+
+Estratégicas de bancos de dados (SQL)
+Driver: SELECT * from users
+Query Builder: table('users').select('*').where()
+KNEX.JS - QUERY BUILDER
+npm install knex
+npm install sqlite3
+
+-para criar o arquivo de configurações do BD(dev, staging, production)
+npx knex init
+
+CRIAR PASTA SRC pra códigos
+routes.js paras rotas
+
+Entidades do sistema:
+ONG
+CASOS
+
+Funcionalidades do sistema:
+-WEB
+Login/cadastro/logout ONG
+Cadastrar/listar/excluir casos ONG
+
+-MOBILE
+Listar casos
+Contato com ONG wpp/email
+
+
+Pra criação de tabelas, utilizar MIGRATIONS
+-migrations é quase um controle de versão de registros
+para criar uma: knex migrate:make migration_name
+ useNullAsDefault: true para sair o warning
+adicionar migration na aba de developmement do knexfile.js
+
+
+método up da migration é responsável pela criação da tabela
+ return knex.schema.createTable('ongs', function(table){
+    table.string('id').primary();
+
+método down é responsável por deletar a tabela
+
+
+para rodar a migration: npx knex migration:latest
+n esquecer do return ou vai dar warning did not return a promise

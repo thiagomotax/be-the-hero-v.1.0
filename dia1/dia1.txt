@@ -25,6 +25,3 @@ apenas dados com respostas (ao inves de html, css etc)
 React
 npx create-react-app appTeste (criar projeto)
 npm start(dependencia start pra iniciar app)
-
-Expo
-framework para react native - conjunto de bibliotecas prontas para utilizar a maioria dos recursos dos smartphones(camera, geo, sensores etc), sem o expo precisa do xcode e android studio 
