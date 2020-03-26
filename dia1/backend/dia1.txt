@@ -1,0 +1,15 @@
+Dia 1
+npm install express - dependencia que ajuda no start da aplicação
+package-lock.json - informações de cache(gerado automatico)
+
+Cannot GET / (rotas não especificadas)
+
+node index.js = liga o servidor (por padrão, ele nao acompanha alterações)
+
+//tratativa de rotas (resposta em json)
+app.get('/contato', (request, response) => {
+    return response.json({
+        titulo: "semana oministack",
+        descricao: "descrição teste"
+    })
+});
