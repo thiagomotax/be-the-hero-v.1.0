@@ -32,3 +32,21 @@ função useState() retorna um array de 2 posições
 utiliza a setCounter pra mexer no valor, p.e setCounter(counter+1)
 
 -Geralmente cria-se um pacote para as paginas(PAGES) e cada umad elas é um componente diferente
+
+ctrl+shift+p - settings.json
+    "emmet.syntaxProfiles":  { "javascript": "jsx" },
+    "emmet.includeLanguages": { "javascript": "javascriptreact"},
+
+pra utilizar, por exemplo div.logon-container
+---estilização feita----
+
+
+instalar plugin para rotas
+npm install react-router-dom
+
+
+--pra não recarregar toda a pagina na hora que clica no link
+troca <a> por componente link de router-dom
+import { Link } from 'react-router-dom';
+
+<a href> vira <Link to
