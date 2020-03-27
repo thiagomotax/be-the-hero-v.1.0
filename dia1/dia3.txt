@@ -50,3 +50,15 @@ troca <a> por componente link de router-dom
 import { Link } from 'react-router-dom';
 
 <a href> vira <Link to
+
+
+
+--Ligar o backend
+npm start na pasta
+-para conectar o projeto react no backend, instala-se um cliente HTTP(axios)
+-criar pasta Services(td serviço que integra externamente) - api.js
+
+para manipular e inserir no bd
+function handleRegister(e){
+	e.preventDefault(); //prevenir a pagina de atualizar
+}

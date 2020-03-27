@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './styles.css';
 import logoImg from '../../assets/logo.svg';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom'; //useHistory para 
 import { FiArrowLeft } from 'react-icons/fi'; 
 import api from '../../services/api';
 
@@ -12,6 +12,7 @@ export default function Register(){
     const [city, setCity] = useState('');
     const [uf, setUf] = useState('');
 
+    const history = useHistory();
 
     async function handleRegister (e){ //disparada quando o formulário recebe ação de submit
         
@@ -28,6 +29,7 @@ export default function Register(){
         try{
             const response = await api.post('ongs', data); //axios ja envia em json
             alert("Seu id de acesso: " + response.data.id);
+            history.push('/'); //retornar pra rota raiz (sem recarregar)
         }
         catch(err){
             alert('Erro no cadastro' + err);
