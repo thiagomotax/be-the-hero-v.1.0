@@ -2,3 +2,33 @@
 readme, app.css, app.test.js, index.css, logo.svg, serviceWorker.js, setupTests
 LIMPAR IMPORTAÇÕES
 --public > robots.txt, manifest.json, logos, index.html, meta e link logo
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+ate antes do titulo
+
+
+--index.html - pagina principal do react
+React monta a pagina a partir do javascript, JS executa dps do html montado em tela
+JOGA o html em tela, dps o js entra preenchendo a div com o restante do codigo(index.js) primeiro arquivo js a ser lido
+DOM - arvore de elementos
+-componente no react é uma função q retorna html
+-quando tem html dentro do js, chama de JSX - (javascript XML[sintaxe html])
+-propriedade são análogos a atributos no html, tipo id="xx", as propriedades tem msm sintaxe
+-componente HEADER.js
+-para usar o componente no html, usa-se a tag, p.e <Header /> fecha no msm lugar pq n tem nd dentro, agr na div root ao inspecionar tem o header
+-pra injetar alguma coisa js dentro do html, usa-se {var}
+-<header> qq coisa q esteja aqui</header>, para pegar, no jsx, usa-se props.children
+-estado é uma informação que vai ser mantida pelo componente
+-n pode ter componente solto, tipo <header>..<button>, por em uma div
+
+-importar {useState} de react tb
+função useState() retorna um array de 2 posições
+-----[0] é o valor da var, [1] é uma func de atualizacao do valor
+  const [counter, setCounter] = useState(0);
+utiliza a setCounter pra mexer no valor, p.e setCounter(counter+1)
+
+-Geralmente cria-se um pacote para as paginas(PAGES) e cada umad elas é um componente diferente

@@ -1,8 +1,10 @@
 import React from 'react';
+import './global.css';
+import Login from './pages/Login'; //ele automaticamente procura pelo arquivo index la dentro
 
 function App() {
   return (
-    <h1>Hello world</h1>
+    <Login />
   );
 }
 
