@@ -40,3 +40,7 @@ expo install react-native-gesture-handler react-native-reanimated react-native-s
 
 existem alguns tipos de navegação no react, stack navigator(padrão), drawer navigation, tabs navigation etc
 npm install @react-navigation/stack
+
+expo install expo-constants
+
+usa-se flatList ao inves de view para fazer listagens(scroll)
