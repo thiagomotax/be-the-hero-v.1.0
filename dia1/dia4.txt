@@ -1,7 +1,10 @@
 --instalar o expo
 npm install -g expo-cli
 
+npm cache clean --force
+
 expo -h (testar)
+expo init?
 
 expo init mobile (blank) - novo projeto react native
 --para executar no celular
