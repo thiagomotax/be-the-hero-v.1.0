@@ -62,3 +62,7 @@ para manipular e inserir no bd
 function handleRegister(e){
 	e.preventDefault(); //prevenir a pagina de atualizar
 }
+
+para ver coisas da localStorage, ir em application > local storage
+
+useEffect, disparar alguma função em algum determinado periodo do componente

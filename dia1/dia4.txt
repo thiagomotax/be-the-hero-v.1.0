@@ -1,0 +1,39 @@
+--instalar o expo
+npm install -g expo-cli
+
+expo -h (testar)
+
+expo init mobile (blank) - novo projeto react native
+--para executar no celular
+	yarn start	
+	baixar app Expo
+	abrir a camera e escanear qr code
+app.json - trocar name, slug tb(bethehero)
+
+--diferenças pro web
+	"div pra tudo, n existe h1, h2 etc"
+import Text from 'react-native';
+ex: <View style={styles.container}>
+	<Text>Hello world</Text>
+    </View>
+
+todo text é text, não existe discriminação(semântica)
+-não tem className, passa-se a tag style e um objeto de estilização
+-todos elementos ja possuem display: flex como padrão
+-não tem hífen, por exemplo, background-color é backgroundColor
+-valores que nao tem numeros precisam ter aspas por fora ''
+-n existe herança de estilização, cada componente tem o seu
+
+-para trocar splash screen e icon apenas alterar os arquivos
+icon/splash
+
+-começar parte de rotas
+-src/routes.js
+
+https://docs.expo.io/versions/latest/
+routing
+npm install @react-navigation/native
+expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+
+existem alguns tipos de navegação no react, stack navigator(padrão), drawer navigation, tabs navigation etc
+npm install @react-navigation/stack
